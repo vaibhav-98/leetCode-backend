@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  problem-service:
+    build: .
+    container_name: leetcode-problem-service
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - ATLAS_DB_URL=mongodb+srv://vaibhavtripathi1512:vzYXjVqrIR2tUTQJ@cluster0.alcxcry.mongodb.net/Problem
+      - NODE_ENV=production
+    restart: always
+
+# If you have a local MongoDB you want to use instead of Atlas:
+# services:
+#   mongodb:
+#     image: mongo:latest
+#     ports:
+#       - "27017:27017"
+#     volumes:
+#       - mongo-data:/data/db
+
+# volumes:
+#   mongo-data:
