@@ -1,0 +1,20 @@
+{
+   "name": "fasttodoapp",
+   "version": "1.0.0",
+   "main": "index.js",
+   "scripts": {
+      "start": " npx nodemon src/index.js"
+   },
+   "dependencies": {
+      "@fastify/cors": "^11.2.0",
+      "axios": "^1.13.6",
+      "bullmq": "^5.70.4",
+      "dotenv": "^17.3.1",
+      "fastify": "^5.8.1",
+      "fastify-plugin": "^5.1.0",
+      "http-status-codes": "^2.3.0",
+      "ioredis": "^5.10.0",
+      "mongoose": "^9.3.0",
+      "nodemon": "^3.1.14"
+   }
+}
